@@ -1,0 +1,16 @@
+<%#= form_for @restaurant do |f| %>
+  <%#= f.label :name %>
+  <%#= f.text_field :name %>
+  <%#= f.label :address %>
+  <%#= f.text_field :address %>
+  <%#= f.label :rating %>
+  <%#= f.text_field :rating %>
+  <%#= f.submit %>
+<%# end %>
+
+<%= simple_form_for @restaurant do |f| %>
+  <%= f.input :name, label: "Please type the name", placeholder: "Name" %>
+  <%= f.input :address%>
+  <%= f.input :rating %>
+  <%= f.submit %>
+<% end %>
